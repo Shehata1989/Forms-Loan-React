@@ -4,11 +4,6 @@ import { createContext, useContext } from "react";
 
 export let RegFormContext = createContext();
 
-export const RegFormProvider = ({ children, value }) => {
-  return (
-    <RegFormContext.Provider value={{value}}>{children}</RegFormContext.Provider>
-  );
-};
 
 export const UseRegContext = () => {
     const RegForm = useContext(RegFormContext);
